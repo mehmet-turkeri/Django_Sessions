@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent # BASE_DIR Projemin bulundugu klasoru kastediyor
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent # BASE_DIR Projemin bulundugu 
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-zd$&^5@s*s)pntsji5c%f-(%rvo(cbh!t3_58l1yrk(3-(oq(h' # Her proje icin Djangonun urettigi unique key
+SECRET_KEY = config("SECRET_KEY") # Her proje icin Djangonun urettigi unique key/ .env icine atildi
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True # Proje isiniz bittiginde deploymenta veya musteriye gonderirken False yapin.
