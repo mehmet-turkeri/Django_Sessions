@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fscohort', # benim app'imi buraya ekledim.
+    #third party app
+    'rest_framework',
+    #myapps
+    'student_api',
 ]
 
 MIDDLEWARE = [
