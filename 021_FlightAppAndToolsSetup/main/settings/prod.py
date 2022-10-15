@@ -13,6 +13,7 @@ MIDDLEWARE += [
     
 ]
 
+'''
 # PostreSQL:
 DATABASES = { 
     "default": { 
@@ -23,5 +24,13 @@ DATABASES = {
         "HOST": config("POSTGRESQL_HOST"), 
         "PORT": config("POSTGRESQL_PORT"), 
         "ATOMIC_REQUESTS": True, 
+    }
+}
+'''
+# SQLite:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db_live.sqlite3',
     }
 }
