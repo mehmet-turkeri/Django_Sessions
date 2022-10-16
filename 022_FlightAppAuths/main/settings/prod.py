@@ -43,15 +43,15 @@ LOGGING = {
 #     }
 # }
 
-# PostreSQL:
+# PostgreSQL:
 DATABASES = { 
     "default": { 
         "ENGINE": "django.db.backends.postgresql_psycopg2", 
-        "NAME": config("POSTRESQL_DATABASE"), 
-        "USER": config("POSTRESQL_USER"), 
-        "PASSWORD": config("POSTRESQL_PASSWORD"), 
-        "HOST": config("POSTRESQL_HOST"), 
-        "PORT": config("POSTRESQL_PORT"), 
+        "NAME": config("POSTGRESQL_DATABASE"), 
+        "USER": config("POSTGRESQL_USER"), 
+        "PASSWORD": config("POSTGRESQL_PASSWORD"), 
+        "HOST": config("POSTGRESQL_HOST"), 
+        "PORT": config("POSTGRESQL_PORT"), 
         "ATOMIC_REQUESTS": True, 
     }
 }
