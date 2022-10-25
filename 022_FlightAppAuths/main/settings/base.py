@@ -117,6 +117,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Alttaki kod Djangoya kullanıcı giriş yaptıktan sonra token serializers ı degil benim yeni yazdıgım serializeri(WideTokenSerializer) çalıştır demek için'
 REST_AUTH_SERIALIZERS = {
     'TOKEN_SERIALIZER': 'users.serializers.WideTokenSerializer',
 }
