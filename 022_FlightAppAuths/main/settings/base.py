@@ -122,6 +122,7 @@ REST_AUTH_SERIALIZERS = {
     'TOKEN_SERIALIZER': 'users.serializers.WideTokenSerializer',
 }
 
+# Alttaki kodla dogrulamayi artik CSRF kodla degilde Token uzerinden yapacaksin diyoruz
 REST_FRAMEWORK = {
     # Allow post-request without CSRF, so can connection with Token from external service, like Postman:
     'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework.authentication.TokenAuthentication']
